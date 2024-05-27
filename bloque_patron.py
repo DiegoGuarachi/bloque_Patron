@@ -1,3 +1,6 @@
+# Codigo realizado por Diego Guarachi Perez, Ingeniero planificacor.
+# El codigo es para obtener la medida a travez de bloques patron.
+
 def find_best_combinations(blocks, target,tol_greater,tol_smaller, start=0, path=[], best_path_greater=[], best_path_smaller=[], best_diff_greater=float('inf'), best_diff_smaller=float('inf')):
     # Calcular la suma actual del camino
     current_sum = sum(path)
@@ -37,9 +40,10 @@ blocks = [0.1,0.101,0.1002,0.1003,0.1004,0.1005,0.1006,0.1007,0.1008,0.1009,0.05
 target_size = 10.53
 target_size = target_size/25.4
 
-# Tolerancia de busqueda
+# Tolerancia de busqueda para cota superior y menor
 tol_greater = 0.002
 tol_smaller = 0.002
+
 # Encontrar las mejores combinaciones
 tol_greater = tol_greater/25.4
 tol_smaller = tol_smaller/25.4
